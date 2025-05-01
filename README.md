@@ -6,14 +6,14 @@ Follow the instructions below:
 ```
 git clone https://github.com/fundwotsai2001/Text-to-music-dataset-preparation.git
 cd Text-to-music-dataset-preparation
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 2. Download the full-length version of Jamendo via:
 ```
 python3 ./mtg-jamendo-dataset/scripts/download/download.py --dataset raw_30s --type audio ./mtg-full --unpack --remove
 ```
-`../mtg-full` is the output directory.
+`./mtg-full` is the output directory.
 
 3. Resample the audio to 44100 hz, and slice it to shape (2, 2097152), this is optional if you are not using MuseControlLite.
 ```
