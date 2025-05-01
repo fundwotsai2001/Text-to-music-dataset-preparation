@@ -32,7 +32,7 @@ python ./panns_inference/filter_vocal.py --audio_folder ./mtg-full-47s --json_pa
 ```
 python Qwen2audio_captioning.py --input_json ./filtered_vocal_all.json --output_json ./filtered_vocal_all_caption.json
 ```
-6. Optional, if you are evaluating with the [Song Describer Dataset](https://github.com/mulab-mir/song-describer-dataset), or benchmarking with [MuseControlLite](https://github.com/fundwotsai2001/MuseControlLite), you should filter the [Song Describer Dataset] from the the Jamendo dataset.
+6. Optional, if you are evaluating with the [Song Describer Dataset](https://github.com/mulab-mir/song-describer-dataset), or benchmarking with [MuseControlLite](https://github.com/fundwotsai2001/MuseControlLite), you should filter the no-singing segment of [Song Describer Dataset](https://github.com/mulab-mir/song-describer-dataset) from the the Jamendo dataset.
 ```
 python ./filter_SDD_from_jamendo.py
 ```
