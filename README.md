@@ -1,5 +1,6 @@
 # Text to music dataset prepare
-The implementation for the audio captioning pipeline used in [MuseControlLite](https://github.com/fundwotsai2001/MuseControlLite). We use [Jamendo](https://github.com/MTG/mtg-jamendo-dataset) and [FMA](https://github.com/mdeff/fma) as exmaple, but the pipeline should be suitable for other datasets.
+The implementation for the audio captioning pipeline used in [MuseControlLite](https://github.com/fundwotsai2001/MuseControlLite), our ICML2025 publication. We use [Jamendo](https://github.com/MTG/mtg-jamendo-dataset) and [FMA](https://github.com/mdeff/fma) as exmaple, but the pipeline should be suitable for other datasets. The key feature is that we use PANNs to filter audio containing vocals and employ Qwen2-Audio-7B-Instruct for captioning.
+
 
 Follow the instructions below:
 1. Clone the github repo, and install the required packages:
@@ -12,6 +13,7 @@ pip install -r requirements.txt
 2. Download the full-length version of Jamendo or FMA via:
 ```
 # For Jamendo
+mkdir mtg-full
 python3 ./mtg-jamendo-dataset/scripts/download/download.py --dataset raw_30s --type audio ./mtg-full --unpack --remove
 # For FMA
 wget https://os.unil.cloud.switch.ch/fma/fma_full.zip
