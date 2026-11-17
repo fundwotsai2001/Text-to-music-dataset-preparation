@@ -39,3 +39,12 @@ python Qwen2audio_captioning.py --input_json ./filtered_vocal_all.json --output_
 python ./filter_SDD_from_jamendo.py
 ```
 
+## Cite this paper with 
+```
+@article{tsai2025musecontrollite,
+  title={MuseControlLite: Multifunctional Music Generation with Lightweight Conditioners},
+  author={Tsai, Fang-Duo and Wu, Shih-Lun and Lee, Weijaw and Yang, Sheng-Ping and Chen, Bo-Rui and Cheng, Hao-Chung and Yang, Yi-Hsuan},
+  journal={arXiv preprint arXiv:2506.18729},
+  year={2025}
+}
+```
